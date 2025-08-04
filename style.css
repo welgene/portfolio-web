@@ -37,3 +37,43 @@ nav a{
   background-color: #555;
   border-radius: 4px;
 }
+
+#hero {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#hero h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+#hero p {
+  font-size: 1rem;
+  color: #666;
+}
+
+section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  color: #222;
+}
+
+section p {
+  margin-bottom: 1rem;
+}
+
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  background-color: #e0e0e0;
+  padding: 0.4rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.9rem;
+}
