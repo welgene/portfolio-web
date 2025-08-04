@@ -41,19 +41,14 @@ nav {
 nav a{
     color: #fff;
     text-decoration: none;
+    padding: 0.5rem;
+    transition: background-color 0.2s ease-in-out;
 }
 
-.nav-link {
-  color: #fff;
-  text-decoration: none;
-  padding: 0.5rem;
-}
-
-.nav-link:hover {
+nav a:hover {
   background-color: #555;
   border-radius: 4px;
 }
-
 #hero {
   text-align: center;
   margin: 2rem 0;
@@ -212,12 +207,32 @@ body.dark-mode nav {
   background-color: #222;
 }
 
-body.dark-mode .nav-link {
+body.dark-mode nav a {
   color: #e0e0e0;
 }
 
-body.dark-mode .nav-link:hover {
+body.dark-mode nav a:hover {
   background-color: #444;
+}
+
+body.dark-mode #hero p,
+body.dark-mode #education p {
+  color: #aaa;
+}
+
+body.dark-mode section h2 {
+  color: #f0f0f0;
+}
+
+body.dark-mode .skill-tag {
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+body.dark-mode #education {
+  background-color: #1e1e1e;
+  box-shadow: none;
+  border: 1px solid #444;
 }
 
 body.dark-mode .project-card {
@@ -238,6 +253,14 @@ body.dark-mode textarea {
   background-color: #222;
   color: #e0e0e0;
   border: 1px solid #555;
+}
+
+body.dark-mode .project-card a {
+  color: #4dabf7;
+}
+
+body.dark-mode footer {
+  color: #888;
 }
 
 /* === Toggle Switch Styles === */
