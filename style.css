@@ -77,3 +77,29 @@ section p {
   border-radius: 15px;
   font-size: 0.9rem;
 }
+
+
+#education {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+#education h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+}
+
+#education p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+#education .btn {
+  font-size: 0.95rem;
+  padding: 0.6rem 1rem;
+  text-align: center;
+}
