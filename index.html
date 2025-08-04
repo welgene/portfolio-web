@@ -14,6 +14,12 @@
         <a href="#about" class="nav-link">About</a>
         <a href="#projects" class="nav-link">Projects</a>
         <a href="#contact" class="nav-link">Contact</a>
+
+        <label class="theme-switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+        </label>
+
     </nav>
   </header>
 
@@ -86,9 +92,26 @@
         </section>
   </main>
 
-   <footer>
+  <footer>
         <p>&copy; 2025 - Eugene Ogwel</p>
-        </footer>
+  </footer>
+
+  <script>
+  const toggle = document.getElementById('theme-toggle');
+  const body = document.body;
+
+  // Load saved theme
+  if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-mode');
+    toggle.checked = true;
+  }
+
+  toggle.addEventListener('change', () => {
+    body.classList.toggle('dark-mode');
+    localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
+  });
+</script>
+
 
 </body>
 </html>
